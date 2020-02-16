@@ -39597,15 +39597,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4260716708102600, guid: b1d23a1e853d53f4086ec55a196d057b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4260716708102600, guid: b1d23a1e853d53f4086ec55a196d057b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4260716708102600, guid: b1d23a1e853d53f4086ec55a196d057b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4260716708102600, guid: b1d23a1e853d53f4086ec55a196d057b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -73130,8 +73130,10 @@ MonoBehaviour:
   xSpeed: 30
   xRange: 10
   ySpeed: 20
-  yTopRange: 5
-  yBottomRange: -6
+  yTopRange: 4.5
+  yBottomRange: -7
+  positionPitchFactor: -1.5
+  controlPitchFactor: -10
 --- !u!1001 &1901153819
 PrefabInstance:
   m_ObjectHideFlags: 0
