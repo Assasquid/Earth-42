@@ -42244,6 +42244,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Butte_02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1596016397334812, guid: 4f93dd837a4f7a54bb95d10ec4233866, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4493886742648108, guid: 4f93dd837a4f7a54bb95d10ec4233866, type: 3}
       propertyPath: m_LocalPosition.x
       value: -55.9
@@ -85619,14 +85623,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1013187064}
     m_Modifications:
-    - target: {fileID: 70587825, guid: a0211b29a205b0643a0e9f6d878b4746, type: 3}
-      propertyPath: m_IsKinematic
+    - target: {fileID: 6353665712952820179, guid: a0211b29a205b0643a0e9f6d878b4746,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580145646231873275, guid: a0211b29a205b0643a0e9f6d878b4746,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8581076911556810346, guid: a0211b29a205b0643a0e9f6d878b4746,
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581076911556810346, guid: a0211b29a205b0643a0e9f6d878b4746,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581092175679552748, guid: a0211b29a205b0643a0e9f6d878b4746,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581138448301189240, guid: a0211b29a205b0643a0e9f6d878b4746,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8583278253124894198, guid: a0211b29a205b0643a0e9f6d878b4746,
         type: 3}
@@ -85683,14 +85708,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8642827041681909878, guid: a0211b29a205b0643a0e9f6d878b4746,
+    - target: {fileID: 8594639926932720256, guid: a0211b29a205b0643a0e9f6d878b4746,
         type: 3}
-      propertyPath: m_IsTrigger
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8642827041681909878, guid: a0211b29a205b0643a0e9f6d878b4746,
+    - target: {fileID: 8594992696008186496, guid: a0211b29a205b0643a0e9f6d878b4746,
         type: 3}
-      propertyPath: m_Convex
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
