@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement; // ok as long as this it the only script load
 
 public class CollisionHandler : MonoBehaviour
 {
-    [Tooltip("In seconds")][SerializeField] float levelLoadDelay = 1f;
-    [Tooltip("FX prefab on player")][SerializeField] GameObject deathFX;
+    [Tooltip("In seconds")] [SerializeField] float levelLoadDelay = 2f;
+    [Tooltip("FX prefab on player")] [SerializeField] GameObject deathFX;
     [Tooltip("FX prefab on player")] [SerializeField] GameObject deathFXCam;
 
     private void OnTriggerEnter(Collider collider)
@@ -14,12 +14,16 @@ public class CollisionHandler : MonoBehaviour
         StartDeathSequence();
         deathFX.SetActive(true);
         deathFXCam.SetActive(true);
+        Invoke("ReloadScene", levelLoadDelay);
     }
 
     private void StartDeathSequence()
     {
-        print("Player is dying");
         SendMessage("OnPlayerDeath");
+    }
 
+    private void ReloadScene() // string referenced
+    {
+        SceneManager.LoadScene(1);
     }
 }
