@@ -9906,6 +9906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd270a5223075d4c896f7631b59d729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 42
   deathFX: {fileID: 2838040032624316238, guid: 7b76216d43badd74ba600ee122619d1f, type: 3}
   parent: {fileID: 54551739}
 --- !u!1001 &242103002
@@ -13724,6 +13725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd270a5223075d4c896f7631b59d729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 69
   deathFX: {fileID: 2838040032624316238, guid: 7b76216d43badd74ba600ee122619d1f, type: 3}
   parent: {fileID: 54551739}
 --- !u!1001 &350015462
@@ -13819,6 +13821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd270a5223075d4c896f7631b59d729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 19
   deathFX: {fileID: 2838040032624316238, guid: 7b76216d43badd74ba600ee122619d1f, type: 3}
   parent: {fileID: 54551739}
 --- !u!1001 &355470600
@@ -16163,8 +16166,9 @@ GameObject:
   - component: {fileID: 405278550}
   - component: {fileID: 405278552}
   - component: {fileID: 405278551}
+  - component: {fileID: 405278553}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Score Board
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16308,6 +16312,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 405278549}
   m_CullTransparentMesh: 0
+--- !u!114 &405278553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405278549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c0596cd2f79ea64ca34af0819d29edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &407831357
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20896,6 +20912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd270a5223075d4c896f7631b59d729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 42
   deathFX: {fileID: 2838040032624316238, guid: 7b76216d43badd74ba600ee122619d1f, type: 3}
   parent: {fileID: 54551739}
 --- !u!1 &506644117
@@ -21254,6 +21271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd270a5223075d4c896f7631b59d729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 19
   deathFX: {fileID: 2838040032624316238, guid: 7b76216d43badd74ba600ee122619d1f, type: 3}
   parent: {fileID: 54551739}
 --- !u!1001 &522330956
@@ -21349,6 +21367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd270a5223075d4c896f7631b59d729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 42
   deathFX: {fileID: 2838040032624316238, guid: 7b76216d43badd74ba600ee122619d1f, type: 3}
   parent: {fileID: 54551739}
 --- !u!1001 &523195753
@@ -25971,6 +25990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd270a5223075d4c896f7631b59d729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 42
   deathFX: {fileID: 2838040032624316238, guid: 7b76216d43badd74ba600ee122619d1f, type: 3}
   parent: {fileID: 54551739}
 --- !u!1001 &617610789
@@ -29594,6 +29614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd270a5223075d4c896f7631b59d729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 19
   deathFX: {fileID: 2838040032624316238, guid: 7b76216d43badd74ba600ee122619d1f, type: 3}
   parent: {fileID: 54551739}
 --- !u!1001 &717864621
@@ -30133,6 +30154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd270a5223075d4c896f7631b59d729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 19
   deathFX: {fileID: 2838040032624316238, guid: 7b76216d43badd74ba600ee122619d1f, type: 3}
   parent: {fileID: 54551739}
 --- !u!1001 &737806140
@@ -35590,6 +35612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd270a5223075d4c896f7631b59d729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 420
   deathFX: {fileID: 2838040032624316238, guid: 7b76216d43badd74ba600ee122619d1f, type: 3}
   parent: {fileID: 54551739}
 --- !u!1001 &881181039
@@ -37158,6 +37181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd270a5223075d4c896f7631b59d729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 19
   deathFX: {fileID: 2838040032624316238, guid: 7b76216d43badd74ba600ee122619d1f, type: 3}
   parent: {fileID: 54551739}
 --- !u!1001 &940859536
@@ -37778,6 +37802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd270a5223075d4c896f7631b59d729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 42
   deathFX: {fileID: 2838040032624316238, guid: 7b76216d43badd74ba600ee122619d1f, type: 3}
   parent: {fileID: 54551739}
 --- !u!1001 &953302827
@@ -53707,6 +53732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd270a5223075d4c896f7631b59d729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 42
   deathFX: {fileID: 2838040032624316238, guid: 7b76216d43badd74ba600ee122619d1f, type: 3}
   parent: {fileID: 54551739}
 --- !u!1001 &1369149716
@@ -61335,6 +61361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd270a5223075d4c896f7631b59d729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 42
   deathFX: {fileID: 2838040032624316238, guid: 7b76216d43badd74ba600ee122619d1f, type: 3}
   parent: {fileID: 54551739}
 --- !u!1001 &1569240467
@@ -63329,6 +63356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd270a5223075d4c896f7631b59d729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 42
   deathFX: {fileID: 2838040032624316238, guid: 7b76216d43badd74ba600ee122619d1f, type: 3}
   parent: {fileID: 54551739}
 --- !u!1001 &1612810208
@@ -64024,6 +64052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd270a5223075d4c896f7631b59d729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 19
   deathFX: {fileID: 2838040032624316238, guid: 7b76216d43badd74ba600ee122619d1f, type: 3}
   parent: {fileID: 54551739}
 --- !u!1 &1624419340 stripped
@@ -64044,6 +64073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd270a5223075d4c896f7631b59d729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 42
   deathFX: {fileID: 2838040032624316238, guid: 7b76216d43badd74ba600ee122619d1f, type: 3}
   parent: {fileID: 54551739}
 --- !u!1001 &1624913088
@@ -64214,6 +64244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd270a5223075d4c896f7631b59d729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 19
   deathFX: {fileID: 2838040032624316238, guid: 7b76216d43badd74ba600ee122619d1f, type: 3}
   parent: {fileID: 54551739}
 --- !u!1001 &1628114057
@@ -72785,6 +72816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd270a5223075d4c896f7631b59d729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 42
   deathFX: {fileID: 2838040032624316238, guid: 7b76216d43badd74ba600ee122619d1f, type: 3}
   parent: {fileID: 54551739}
 --- !u!1001 &1813507637
@@ -72880,6 +72912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd270a5223075d4c896f7631b59d729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 42
   deathFX: {fileID: 2838040032624316238, guid: 7b76216d43badd74ba600ee122619d1f, type: 3}
   parent: {fileID: 54551739}
 --- !u!4 &1815520822 stripped
@@ -79847,6 +79880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd270a5223075d4c896f7631b59d729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 19
   deathFX: {fileID: 2838040032624316238, guid: 7b76216d43badd74ba600ee122619d1f, type: 3}
   parent: {fileID: 54551739}
 --- !u!1 &1977573254
@@ -80414,6 +80448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd270a5223075d4c896f7631b59d729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 69
   deathFX: {fileID: 2838040032624316238, guid: 7b76216d43badd74ba600ee122619d1f, type: 3}
   parent: {fileID: 54551739}
 --- !u!1001 &2003281460
