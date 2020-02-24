@@ -8,9 +8,9 @@ public class PlayerController : MonoBehaviour
 {
 
     [Header("General")]
-   
     [Tooltip("In m^-1")][SerializeField] float controlXSpeed = 30f;
     [Tooltip("In m")] [SerializeField] float xRange = 10f;
+    [SerializeField] GameObject[] guns;
     
     [Tooltip("In m^-1")] [SerializeField] float controlYSpeed = 20f;
     [Tooltip("In m")] [SerializeField] float yTopRange = 4.5f;
@@ -34,22 +34,13 @@ public class PlayerController : MonoBehaviour
         {
             ProcessTranslation();
             ProcessRotation();
+            ProcessFiring();
         }
     }
 
     void OnPlayerDeath() // called by string reference
     {
         isControlEnabled = false;
-    }
-
-    private void ProcessRotation()
-    {
-        float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
-        float pitchDueToControlThrow = yThrow * controlPitchFactor;
-        float pitch = pitchDueToPosition + pitchDueToControlThrow;
-        float yaw = transform.localPosition.x * positionYawFactor;
-        float roll = xThrow * controlRollFactor;
-        transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
 
     private void ProcessTranslation()
@@ -65,5 +56,44 @@ public class PlayerController : MonoBehaviour
         float clampedYPos = Mathf.Clamp(rawYPos, yBottomRange, yTopRange);
 
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
+    }
+
+    private void ProcessRotation()
+    {
+        float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
+        float pitchDueToControlThrow = yThrow * controlPitchFactor;
+        float pitch = pitchDueToPosition + pitchDueToControlThrow;
+        float yaw = transform.localPosition.x * positionYawFactor;
+        float roll = xThrow * controlRollFactor;
+        transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+    }
+
+    private void ProcessFiring()
+    {
+        if (CrossPlatformInputManager.GetButton("Fire"))
+        {
+            ActivateGuns();
+        }
+
+        else
+        {
+            DeactivateGuns();
+        }
+    }
+
+    private void ActivateGuns()
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(true);
+        }
+    }
+
+    private void DeactivateGuns()
+    {
+        foreach (GameObject gun in guns)
+        { 
+            gun.SetActive(false);
+        }
     }
 }
