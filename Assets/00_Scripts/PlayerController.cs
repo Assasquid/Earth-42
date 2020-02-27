@@ -10,11 +10,12 @@ public class PlayerController : MonoBehaviour
     [Header("General")]
     [Tooltip("In m^-1")][SerializeField] float controlXSpeed = 30f;
     [Tooltip("In m")] [SerializeField] float xRange = 10f;
-    [SerializeField] GameObject[] guns;
     
     [Tooltip("In m^-1")] [SerializeField] float controlYSpeed = 20f;
     [Tooltip("In m")] [SerializeField] float yTopRange = 4.5f;
     [Tooltip("In m")] [SerializeField] float yBottomRange = -7f;
+
+    [SerializeField] GameObject[] guns;
 
     [Header("Screen-position Based")]
     [SerializeField] float positionPitchFactor = -1.5f;
@@ -72,28 +73,21 @@ public class PlayerController : MonoBehaviour
     {
         if (CrossPlatformInputManager.GetButton("Fire"))
         {
-            ActivateGuns();
+            SetGunsActive(true);
         }
 
         else
         {
-            DeactivateGuns();
+            SetGunsActive(false);
         }
     }
 
-    private void ActivateGuns()
+    private void SetGunsActive(bool isActive)
     {
-        foreach (GameObject gun in guns)
+        foreach (GameObject gun in guns) // care may affect death FX
         {
-            gun.SetActive(true);
-        }
-    }
-
-    private void DeactivateGuns()
-    {
-        foreach (GameObject gun in guns)
-        { 
-            gun.SetActive(false);
+            var emissionModule = gun.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = isActive;
         }
     }
 }

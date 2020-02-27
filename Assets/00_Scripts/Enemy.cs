@@ -22,8 +22,8 @@ public class Enemy : MonoBehaviour
 
     private void AddNonTriggerBoxCollider()
     {
-        Collider meshCollider = gameObject.AddComponent<MeshCollider>();
-        meshCollider.isTrigger = false;
+        Collider boxCollider = gameObject.AddComponent<BoxCollider>();
+        boxCollider.isTrigger = false;
     }
 
     void OnParticleCollision(GameObject other)
